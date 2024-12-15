@@ -1,13 +1,27 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function Contact() {
+function Contact(props) {
   return (
-    <div
-      className="ui raised very padded text container segment"
-      style={{ marginTop: "80px" }}
-    >
-      <h3 className="ui header">Contact</h3>
-      <p>Lorem</p>
+    <div>
+      <div
+        className="ui raised very padded text container segment"
+        style={{ marginTop: "80px" }}
+      >
+        <Link to="/card/alex" className="ui header">
+          Alex
+        </Link>
+        <p>Lorem</p>
+      </div>
+      <div
+        className="ui raised very padded text container segment"
+        style={{ marginTop: "80px" }}
+      >
+        <Link to="/card/willma" className="ui header">
+          Willma
+        </Link>
+        <p>Lorem</p>
+      </div>
     </div>
   );
 }
